@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Political Science Data Manipulation: A Case Study Approach in R</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Ongoing book illustrating the essentials of data manipulation, using political science case studies to illustrate.">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Political Science Data Manipulation: A Case Study Approach in R" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Ongoing book illustrating the essentials of data manipulation, using political science case studies to illustrate." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Political Science Data Manipulation: A Case Study Approach in R" />
+  
+  <meta name="twitter:description" content="Ongoing book illustrating the essentials of data manipulation, using political science case studies to illustrate." />
+  
+
+<meta name="author" content="Mike Gruszczynski">
+
+
+<meta name="date" content="2017-01-09">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="beginning-r-usage.html">
+<link rel="next" href="survey-data-in-r.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">R Case Studies</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html"><i class="fa fa-check"></i><b>2</b> Beginning <em>R</em> Usage</a><ul>
+<li class="chapter" data-level="2.1" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html#everything-is-an-object"><i class="fa fa-check"></i><b>2.1</b> Everything is an Object</a></li>
+<li class="chapter" data-level="2.2" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html#calculations"><i class="fa fa-check"></i><b>2.2</b> Calculations</a></li>
+<li class="chapter" data-level="2.3" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html#loading-data"><i class="fa fa-check"></i><b>2.3</b> Loading Data</a></li>
+<li class="chapter" data-level="2.4" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html#matrices-data.frames"><i class="fa fa-check"></i><b>2.4</b> Matrices, data.frames</a></li>
+<li class="chapter" data-level="2.5" data-path="beginning-r-usage.html"><a href="beginning-r-usage.html#exportingsaving-data"><i class="fa fa-check"></i><b>2.5</b> Exporting/Saving Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="advanced-data-manipulation-in-r.html"><a href="advanced-data-manipulation-in-r.html"><i class="fa fa-check"></i><b>3</b> Advanced Data Manipulation in <em>R</em></a><ul>
+<li class="chapter" data-level="3.1" data-path="advanced-data-manipulation-in-r.html"><a href="advanced-data-manipulation-in-r.html#the-tidyverse"><i class="fa fa-check"></i><b>3.1</b> The Tidyverse</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="advanced-data-manipulation-in-r.html"><a href="advanced-data-manipulation-in-r.html#maxims-of-tidy-data"><i class="fa fa-check"></i><b>3.1.1</b> Maxims of “Tidy” Data</a></li>
+<li class="chapter" data-level="3.1.2" data-path="advanced-data-manipulation-in-r.html"><a href="advanced-data-manipulation-in-r.html#long-and-wide"><i class="fa fa-check"></i><b>3.1.2</b> Long and Wide</a></li>
+<li class="chapter" data-level="3.1.3" data-path="advanced-data-manipulation-in-r.html"><a href="advanced-data-manipulation-in-r.html#ggplot"><i class="fa fa-check"></i><b>3.1.3</b> ggplot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="survey-data-in-r.html"><a href="survey-data-in-r.html"><i class="fa fa-check"></i><b>4</b> Survey Data in <em>R</em></a><ul>
+<li class="chapter" data-level="4.1" data-path="survey-data-in-r.html"><a href="survey-data-in-r.html#the-test-case-pew-research-data"><i class="fa fa-check"></i><b>4.1</b> The test case: Pew Research Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-aggregation-and-merges.html"><a href="data-aggregation-and-merges.html"><i class="fa fa-check"></i><b>5</b> Data Aggregation and Merges</a></li>
+<li class="chapter" data-level="6" data-path="reshape-from-wide-to-long-worldbank-data.html"><a href="reshape-from-wide-to-long-worldbank-data.html"><i class="fa fa-check"></i><b>6</b> Reshape from Wide to Long: WorldBank Data</a></li>
+<li class="chapter" data-level="7" data-path="going-wide-to-long-with-the-minnesota-twins.html"><a href="going-wide-to-long-with-the-minnesota-twins.html"><i class="fa fa-check"></i><b>7</b> Going (Wide-to-) Long with the Minnesota Twins</a></li>
+<li class="chapter" data-level="8" data-path="multiple-transformations-for-complete-data-happiness.html"><a href="multiple-transformations-for-complete-data-happiness.html"><i class="fa fa-check"></i><b>8</b> Multiple Transformations for Complete Data Happiness</a></li>
+<li class="chapter" data-level="9" data-path="accessing-data-on-the-web-with-apis.html"><a href="accessing-data-on-the-web-with-apis.html"><i class="fa fa-check"></i><b>9</b> Accessing Data on the Web with APIs</a><ul>
+<li class="chapter" data-level="9.1" data-path="accessing-data-on-the-web-with-apis.html"><a href="accessing-data-on-the-web-with-apis.html#social-networking-data-with-twitter"><i class="fa fa-check"></i><b>9.1</b> Social Networking Data with Twitter</a></li>
+<li class="chapter" data-level="9.2" data-path="accessing-data-on-the-web-with-apis.html"><a href="accessing-data-on-the-web-with-apis.html#on-the-fly-survey-data-from-huffpost"><i class="fa fa-check"></i><b>9.2</b> On-the-Fly Survey Data from HuffPost</a></li>
+<li class="chapter" data-level="9.3" data-path="accessing-data-on-the-web-with-apis.html"><a href="accessing-data-on-the-web-with-apis.html#census-acs-data"><i class="fa fa-check"></i><b>9.3</b> Census ACS Data</a></li>
+<li class="chapter" data-level="9.4" data-path="accessing-data-on-the-web-with-apis.html"><a href="accessing-data-on-the-web-with-apis.html#internet-archive-television-database"><i class="fa fa-check"></i><b>9.4</b> Internet Archive Television Database</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="dealing-with-untidy-data.html"><a href="dealing-with-untidy-data.html"><i class="fa fa-check"></i><b>10</b> Dealing with Untidy Data</a><ul>
+<li class="chapter" data-level="10.1" data-path="dealing-with-untidy-data.html"><a href="dealing-with-untidy-data.html#json"><i class="fa fa-check"></i><b>10.1</b> JSON</a></li>
+<li class="chapter" data-level="10.2" data-path="dealing-with-untidy-data.html"><a href="dealing-with-untidy-data.html#xml"><i class="fa fa-check"></i><b>10.2</b> XML</a></li>
+<li class="chapter" data-level="10.3" data-path="dealing-with-untidy-data.html"><a href="dealing-with-untidy-data.html#raw-html"><i class="fa fa-check"></i><b>10.3</b> Raw HTML</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="disparate-times-call-for-disparate-measures.html"><a href="disparate-times-call-for-disparate-measures.html"><i class="fa fa-check"></i><b>11</b> Disparate Times Call for Disparate Measures</a></li>
+<li class="chapter" data-level="12" data-path="other-r-things-of-note.html"><a href="other-r-things-of-note.html"><i class="fa fa-check"></i><b>12</b> Other <em>R</em> Things of Note</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Political Science Data Manipulation: A Case Study Approach in R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="advanced-data-manipulation-in-r" class="section level1">
+<h1><span class="header-section-number">Ch. 3</span> Advanced Data Manipulation in <em>R</em></h1>
+<div id="the-tidyverse" class="section level2">
+<h2><span class="header-section-number">3.1</span> The Tidyverse</h2>
+<div id="maxims-of-tidy-data" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Maxims of “Tidy” Data</h3>
+</div>
+<div id="long-and-wide" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Long and Wide</h3>
+</div>
+<div id="ggplot" class="section level3">
+<h3><span class="header-section-number">3.1.3</span> ggplot</h3>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="beginning-r-usage.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="survey-data-in-r.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-advanced-manip.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
