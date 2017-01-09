@@ -1,0 +1,3 @@
+# Reshape from Wide to Long: WorldBank Data
+
+WorldBank data typically comes in "wide" format; how do we get it into useable form?

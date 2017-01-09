@@ -1,0 +1,10 @@
+# Advanced Data Manipulation in *R*
+
+## The Tidyverse
+
+### Maxims of "Tidy" Data
+
+### Long and Wide
+
+### ggplot
+

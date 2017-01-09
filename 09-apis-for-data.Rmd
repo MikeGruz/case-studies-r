@@ -1,0 +1,12 @@
+# Accessing Data on the Web with APIs
+
+Web APIs give researchers a wealth of data from which to base their analyses... here are some examples.
+
+## Social Networking Data with Twitter
+
+## On-the-Fly Survey Data from HuffPost
+
+## Census ACS Data
+
+## Internet Archive Television Database
+

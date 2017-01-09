@@ -1,0 +1,9 @@
+# Dealing with Untidy Data
+
+When there's no *R* wrapper for a web API..
+
+## JSON
+
+## XML
+
+## Raw HTML
